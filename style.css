@@ -64,3 +64,91 @@
     top: 14.8rem;
     left: 52.9%;
 }
+.s-l-dwn{
+    width: 100px;
+    height: 4vh;
+    background-color: black;
+    position: absolute;
+    top: 25rem;
+    left: 50%; 
+}
+.s-l-dwn-oval{
+    width: 300px;
+    height: 5vh;
+    background-color: black;
+    position: absolute;
+    top: 27rem;
+    left: 45.5%;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+}
+.leaf-container{
+   /* border: 2px solid yellow;
+    padding: 2rem; */
+    position: absolute;
+    width: 100px;
+    top: 0px;
+    left: 50%;
+    animation: leaffall 5s 1 linear forwards;
+}
+@keyframes leaffall{
+    0%{
+        left: 50%;
+        top: 10px;
+    }
+    25%{
+        top: 40px;
+        left: 53%;
+        transform: rotate(45deg);
+    }
+    50%{
+        top: 12rem;
+        left: 55%;
+        transform: rotate(90deg);
+    }
+    100%{
+        top: 19rem;
+        left: 56%;
+        transform: rotate(60deg);
+    }
+}
+.leaf-l{
+    width: 20px;
+    height: 20px;
+    background-color: green;
+    position: absolute;
+    left: 60%;
+    top: 31px;
+    border-radius: 0% 50%;
+    transform: rotate(100deg);
+}
+.leaf-r{
+    width: 20px;
+    height: 20px;
+    background-color: green;
+    position: absolute;
+    left: 31.5%;
+    top: 30px;
+    border-radius: 0% 50%;
+    transform: rotate(170deg);
+}
+.leaf-m{
+    width: 20px;
+    height: 20px;
+    background-color: green;
+    position: absolute;
+    left: 47px;
+    top: 17px;
+    border-radius: 0% 50%;
+    transform: rotate(45deg);
+}
+.leaf-line{
+    width: 3px;
+    height: 50px;
+    background-color: green;
+    position: absolute;
+    left: 54.5%;
+    top: 17px;
+}
