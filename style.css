@@ -85,8 +85,6 @@
     border-top-right-radius: 50px;
 }
 .leaf-container{
-   /* border: 2px solid yellow;
-    padding: 2rem; */
     position: absolute;
     width: 100px;
     top: 0px;
@@ -99,7 +97,7 @@
         top: 10px;
     }
     25%{
-        top: 40px;
+        top: 70px;
         left: 53%;
         transform: rotate(45deg);
     }
@@ -152,3 +150,93 @@
     left: 54.5%;
     top: 17px;
 }
+.drop{
+    margin: 0 auto;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    /* top: 71px; */
+    top: 0px;
+    left: 53%;
+    background: #28dbde;
+    border-radius: 20px;
+    animation-name: drop;
+    animation-timing-function: cubic-bezier(1,0,.91,.19);
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+  }
+  
+  .drop:before{
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 30px solid #28dbde;
+    top: -22px;
+  }
+ 
+  .wave{
+    position: absolute;
+    opacity: 0;
+    top: 12rem;
+    left: 45%;
+    width: 2px;
+    height: 1px;
+    border: #28dbde 7px solid;
+    border-radius: 50%;
+    animation-name: ripple1;
+    animation-delay: 2s;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+  }
+  .wave:after{
+    content: "";
+    position: absolute;
+    opacity: 0;
+    top: -2px;
+    left: -5px;
+    width: 2px;
+    height: 1px;
+    border: #28dbde 5px solid;
+    border-radius: 50%;
+    animation-name: ripple2;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+  }
+  @keyframes ripple1 {
+    0%{
+      opacity: 1;
+    }
+    100%{
+      width: 600px;
+      height: 300px;
+      border-width: 1px;
+      top: -100px;
+      opacity: 0;
+    }
+  }
+  
+  @keyframes ripple2 {
+    0%{
+      opacity: 1;
+    }
+    50%{
+      opacity: 0;
+    }
+    100%{
+      width: 200px;
+      height: 100px;
+      border-width: 1px;
+      top: 100px;
+      left: 200px;
+  
+    }
+  }
+  @keyframes drop {
+    100%{
+      top: 190px;
+    }
+  }
+  
