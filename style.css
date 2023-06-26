@@ -176,8 +176,81 @@
     border-bottom: 30px solid #28dbde;
     top: -22px;
   }
- 
-  .wave{
+  @keyframes drop {
+    100%{
+      top: 190px;
+    }
+  }
+  .water-l-1{
+    width: 20px;
+    height: 0px;
+    background-color: #28dbde;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+    position: absolute;
+    top: 12rem;
+    left: 52.9%;
+    animation: waterfall1 2s 2s infinite linear forwards;
+  }
+  .water-l-2{
+    width: 20px;
+    height: 0px;
+    background-color: #28dbde;
+    position: absolute;
+    top: 12.5rem;
+    border-top-left-radius: 10px;
+    border-top-right-radius: -5px;
+    left: 50.8%;
+    animation: waterfall1 2s 2s infinite linear forwards;
+  }
+  .water-l-3{
+    width: 20px;
+    height: 0px;
+    background-color: #28dbde;
+    position: absolute;
+    top: 12.5rem;
+    border-top-left-radius: -5px;
+    border-top-right-radius: 10px;
+    left: 54.8%;
+    animation: waterfall3 2s 2s infinite linear forwards;
+  }
+  @keyframes waterfall1 {
+    0%{
+      height: 0px;
+    }
+    25%{
+      height: 50px;
+    }
+    50%{
+      height: 100px;
+    }
+    100%{
+      height:270px ;
+    }
+  }
+  @keyframes waterfall3 {
+    0%{
+      height: 100px;
+    }
+    25%{
+      height: 70px;
+      /* left: 54.8%;
+      top: 12.5rem; */
+    }
+    50%{
+      height: 20px;
+      left: 56%;
+      width: 20px;
+      top: 20rem;
+    }
+    100%{
+      height: 20px;
+      width: 100px;
+      left: 60%;
+      top: 21rem;
+    }
+  }
+  /* .wave{
     position: absolute;
     opacity: 0;
     top: 12rem;
@@ -233,10 +306,5 @@
       left: 200px;
   
     }
-  }
-  @keyframes drop {
-    100%{
-      top: 190px;
-    }
-  }
+  } */
   
