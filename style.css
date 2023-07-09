@@ -85,72 +85,8 @@
     border-top-right-radius: 50px;
     z-index: 1000;
 }
-.leaf-container{
-    position: absolute;
-    width: 100px;
-    top: -55px;
-    left: 50%;
-    animation: leaffall 3s 4s 1 linear forwards;
-}
-@keyframes leaffall{
-    0%{
-        left: 50%;
-        top: 10px;
-    }
-    25%{
-        top: 70px;
-        left: 53%;
-        transform: rotate(45deg);
-    }
-    50%{
-        top: 12rem;
-        left: 55%;
-        transform: rotate(90deg);
-    }
-    100%{
-        top: 19rem;
-        left: 56%;
-        transform: rotate(60deg);
-    }
-}
-.leaf-l{
-    width: 20px;
-    height: 20px;
-    background-color: green;
-    position: absolute;
-    left: 60%;
-    top: 31px;
-    border-radius: 0% 50%;
-    transform: rotate(100deg);
-}
-.leaf-r{
-    width: 20px;
-    height: 20px;
-    background-color: green;
-    position: absolute;
-    left: 31.5%;
-    top: 30px;
-    border-radius: 0% 50%;
-    transform: rotate(170deg);
-}
-.leaf-m{
-    width: 20px;
-    height: 20px;
-    background-color: green;
-    position: absolute;
-    left: 47px;
-    top: 17px;
-    border-radius: 0% 50%;
-    transform: rotate(45deg);
-}
-.leaf-line{
-    width: 3px;
-    height: 50px;
-    background-color: green;
-    position: absolute;
-    left: 54.5%;
-    top: 17px;
-}
+
+/* ********************************************************************************************* */
 .drop{
     margin: 0 auto;
     position: absolute;
@@ -233,6 +169,78 @@
       height: 0px;
     }
   }
+
+  /************************************************************************************ */
+
+.leaf-container{
+    position: absolute;
+    width: 100px;
+    top: -55px;
+    left: 50%;
+    animation: leaffall 3s 4s 1 linear forwards;
+}
+@keyframes leaffall{
+    0%{
+        left: 50%;
+        top: 10px;
+    }
+    25%{
+        top: 70px;
+        left: 53%;
+        transform: rotate(45deg);
+    }
+    50%{
+        top: 12rem;
+        left: 55%;
+        transform: rotate(90deg);
+    }
+    100%{
+        top: 19rem;
+        left: 56%;
+        transform: rotate(60deg);
+    }
+}
+.leaf-l{
+    width: 20px;
+    height: 20px;
+    background-color: green;
+    position: absolute;
+    left: 60%;
+    top: 31px;
+    border-radius: 0% 50%;
+    transform: rotate(100deg);
+}
+.leaf-r{
+    width: 20px;
+    height: 20px;
+    background-color: green;
+    position: absolute;
+    left: 31.5%;
+    top: 30px;
+    border-radius: 0% 50%;
+    transform: rotate(170deg);
+}
+.leaf-m{
+    width: 20px;
+    height: 20px;
+    background-color: green;
+    position: absolute;
+    left: 47px;
+    top: 17px;
+    border-radius: 0% 50%;
+    transform: rotate(45deg);
+}
+.leaf-line{
+    width: 3px;
+    height: 50px;
+    background-color: green;
+    position: absolute;
+    left: 54.5%;
+    top: 17px;
+}
+
+/*************************************************************************************** */
+
   .flower-container{
     position: absolute;
     width: 100px;
