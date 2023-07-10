@@ -85,6 +85,89 @@
     border-top-right-radius: 50px;
     z-index: 1000;
 }
+/* ********************************************************************************************* */
+.milkdrop{
+    margin: 0 auto;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: -19px;
+    left: 52.5%;
+    background: white;
+    border-radius: 20px;
+    animation-name: milkdrop;
+    animation-timing-function: cubic-bezier(1,0,.91,.19);
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+  }
+  
+  .milkdrop:before{
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 30px solid white;
+    top: -22px;
+  }
+  @keyframes milkdrop {
+    100%{
+      top: 190px;
+    }
+  }
+  .milk-l-1{
+    width: 20px;
+    height: 0px;
+    background-color: white;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+    position: absolute;
+    top: 12rem;
+    left: 52.9%;
+    animation: milkfall1 2s 2s 1 linear forwards;
+  }
+  .milk-l-2{
+    width: 20px;
+    height: 0px;
+    background-color: white;
+    position: absolute;
+    top: 12.5rem;
+    border-top-left-radius: 10px;
+    border-top-right-radius: -5px;
+    left: 50.8%;
+    animation: milkfall1 2s 2s 1 linear forwards;
+  }
+  .milk-l-3{
+    width: 20px;
+    height: 0px;
+    background-color: white;
+    position: absolute;
+    top: 12.5rem;
+    border-top-right-radius: 10px;
+    border-top-left-radius: -5px;
+    left: 54.8%;
+    animation: milkfall1 2s 2s 1 linear forwards;
+  }
+  @keyframes milkfall1 {
+    0%{
+      height: 0px;
+      top: 12rem;
+    }
+    25%{
+      height: 50px;
+    }
+    50%{
+      height: 75px;
+    }
+    75%{
+     height: 100px;
+    } 
+    100%{
+      top: 27rem;
+      height: 0px;
+    }
+  }
 
 /* ********************************************************************************************* */
 .drop{
@@ -99,6 +182,7 @@
     animation-name: drop;
     animation-timing-function: cubic-bezier(1,0,.91,.19);
     animation-duration: 2s;
+    animation-delay: 3s;
     animation-iteration-count: 1;
   }
   
@@ -126,7 +210,7 @@
     position: absolute;
     top: 12rem;
     left: 52.9%;
-    animation: waterfall1 2s 2s 1 linear forwards;
+    animation: waterfall1 2s 5s 1 linear forwards;
   }
   .water-l-2{
     width: 20px;
@@ -137,7 +221,7 @@
     border-top-left-radius: 10px;
     border-top-right-radius: -5px;
     left: 50.8%;
-    animation: waterfall1 2s 2s 1 linear forwards;
+    animation: waterfall1 2s 5s 1 linear forwards;
   }
   .water-l-3{
     width: 20px;
@@ -148,7 +232,7 @@
     border-top-right-radius: 10px;
     border-top-left-radius: -5px;
     left: 54.8%;
-    animation: waterfall1 2s 2s 1 linear forwards;
+    animation: waterfall1 2s 5s 1 linear forwards;
   }
   @keyframes waterfall1 {
     0%{
@@ -175,14 +259,14 @@
 .leaf-container{
     position: absolute;
     width: 100px;
-    top: -55px;
+    top: -65px;
     left: 50%;
-    animation: leaffall 3s 4s 1 linear forwards;
+    animation: leaffall 3s 7s 1 linear forwards;
 }
 @keyframes leaffall{
     0%{
         left: 50%;
-        top: 10px;
+        top: -50px;
     }
     25%{
         top: 70px;
@@ -244,15 +328,15 @@
   .flower-container{
     position: absolute;
     width: 100px;
-    top: -68px;
+    top: -73px;
     /* top:5px; */
     left: 47%;
-    animation: flowerfall 3s 7s 1 linear forwards;
+    animation: flowerfall 3s 10s 1 linear forwards;
 }
 @keyframes flowerfall{
     0%{
         left: 50%;
-        top: 10px;
+        top: -50px;
     }
     25%{
         top: 70px;
